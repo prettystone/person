@@ -1,4 +1,4 @@
-package bank
+package utils
 
 import (
     "strings"
@@ -23,7 +23,7 @@ func ValidLuhn(s string) bool {
     return sum%10 == 0
 }
 
-func IsValid(s string) bool {
+func IsValidBank(s string) bool {
     strings.Trim(s, " ")
     strings.Replace(s, " ", "", -1)
     strings.Replace(s, "-", "", -1)

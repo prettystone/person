@@ -1,4 +1,4 @@
-package bank
+package utils
 
 import "testing"
 
@@ -26,7 +26,7 @@ func TestIsValid(t *testing.T) {
 		"6259064229288023",
 	}
 	for _, v := range arr {
-		r := IsValid(v)
+		r := IsValidBank(v)
 		if !r {
 			t.Errorf("bankid %s, expected true.", v)
 		}
